@@ -19,4 +19,4 @@ No installation, just download the package into your project and call the functi
 
 ## Usage
 
-Initialise the PermIter object and obtain the next permutation by calling the function.
+Initialise the PermIter object and obtain the next permutation by calling next_permutation().
