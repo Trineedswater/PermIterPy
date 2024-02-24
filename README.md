@@ -1,17 +1,12 @@
 # PermIterPy
-A small python library used to generate permuations of integers in iterative calls. Uses Heap's Algorithm to permutate.
+A small python library used to generate permuations of integers in iterative calls. It uses an implementation of Heap's algorithm to generate each permutation. The aim of this library is to optimize the space and time complexity tradeoff for Heap's algorithm - where a recursive approach is used to generate a stack of swaps and then execute them after each call.
 
 ## Table of Contents
 
 - [PermIterPy](#PermIterPy)
   - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
   - [Installation](#installation)
   - [Usage](#usage)
-
-## Introduction
-
-Saves memory by performing sets of small sets of switches rather than a full while loop. 
 
 ## Installation
 
@@ -20,3 +15,10 @@ No installation, just download the package into your project and call the functi
 ## Usage
 
 Initialise the PermIter object and obtain the next permutation by calling next_permutation().
+
+```python
+perm = Permutation(10)
+a = perm.next_permutation()
+b = perm.next_permutation()
+print(a, b)
+```
